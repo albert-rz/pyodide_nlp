@@ -3,7 +3,7 @@ FROM gitpod/workspace-full
 USER gitpod
 
 # Oh My Zsh
-RUN sudo apt-get install zsh
+RUN apt-get install zsh
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # NPM packages
