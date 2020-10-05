@@ -1,13 +1,10 @@
 FROM gitpod/workspace-full
 
-#USER gitpod
-
-RUN sudo apt-get update \
-    && sudo apt-get upgrade
+USER gitpod
 
 # Oh My Zsh
-# RUN apt-get install zsh
-#RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUN brew install zsh
+RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # NPM packages
 RUN npm install --global live-server
