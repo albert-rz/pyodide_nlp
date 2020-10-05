@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 #FROM gitpod/workspace-full
 
-USER gitpod
+#USER gitpod
 
 
 # Oh My Zsh
