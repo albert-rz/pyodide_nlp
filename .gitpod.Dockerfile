@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full
 
-USER gitpod
+USER albert
 
 #RUN sudo apt-get update \
 #    && sudo apt-get upgrade
