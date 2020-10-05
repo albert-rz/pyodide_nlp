@@ -6,7 +6,7 @@ USER gitpod
 RUN brew install zsh
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-RUN chsh zsh
+RUN chsh -s $(which zsh)
 
 # NPM packages
 RUN npm install --global live-server
