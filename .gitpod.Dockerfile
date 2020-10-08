@@ -3,8 +3,8 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-RUN sudo apt-get update \
-    && sudo apt-get upgrade -y
+#RUN sudo apt-get update \
+#    && sudo apt-get upgrade -y
 
 # Oh My Zsh
 RUN sudo apt-get install -y zsh
